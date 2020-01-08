@@ -1,0 +1,7 @@
+{
+  "name": "thailottojs",
+  "version": "1.0.0",
+  "description": "Data Matrix Parser for thai lotto",
+  "main": "main.js",
+  "license": "MIT"
+}
