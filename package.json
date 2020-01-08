@@ -1,6 +1,6 @@
 {
   "name": "thailottojs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Data Matrix Parser for thai lotto",
   "main": "main.js",
   "license": "MIT"
