@@ -15,6 +15,35 @@ export class Lotto {
     }
 }
 
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+export function generateRandomLottoes(num) {
+    let lottoes = [];
+    for (let i = 0; i < num; i++) {
+        let ran = new Lotto(
+            `62-${getRndInteger(10, 99).toString()}-${getRndInteger(
+                10,
+                99
+            ).toString()}-${getRndInteger(100000, 999999).toString()}`
+        );
+        lottoes.push(ran);
+    }
+    return lottoes;
+}
+
+export function generateOrderLottoes(num) {
+    let lottoes = [];
+    for (let i = 0; i < num; i++) {
+        let ran = new Lotto(
+            `62-${10}-${(i % 20) + 21}-${i.toString().padStart(6, "0")}`
+        );
+        lottoes.push(ran);
+    }
+    return lottoes;
+}
+
 export class LottoReward {
     constructor(name, price) {
         this.name = name
